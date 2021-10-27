@@ -170,15 +170,15 @@ function displayworks(){
     var worktemp= ``;
 
     for(var i=0;i<workcontanier.records.length;i++){
-		worktemp+= `<div class="col-md-6">
-		<img src="${workcontanier.records[i].fields.Image}" style="height: 25%;width: 100%;">
-		<div class="blog-text">
-			<h3><a href="${workcontanier.records[i].fields.LiveDemo}"
-					target="_blank">${workcontanier.records[i].fields.Name}</a></h3>
-			<p>${workcontanier.records[i].fields.Desc}</p>
-			<a href="${workcontanier.records[i].fields.LiveDemo}" target="_blank">Live Demo <i class="fas fa-arrow-right"></i></a>
-		</div>
-	</div>`
+		worktemp+= `<div class="col-md-6" >
+			<img src="${workcontanier.records[i].fields.Image}" style="height: 25%;width: 100%;">
+			<div class="blog-text" style="background-color: #fff;padding:20px;margin-bottom:20px;">
+				<h3><a href="${workcontanier.records[i].fields.LiveDemo}"
+						target="_blank">${workcontanier.records[i].fields.Name}</a></h3>
+				<p style="height:100%">${workcontanier.records[i].fields.Desc}</p>
+				<a href="${workcontanier.records[i].fields.LiveDemo}" target="_blank">Live Demo <i class="fas fa-arrow-right"></i></a>
+			</div>
+		</div>`
 
     }
     document.getElementById("workRows").innerHTML=worktemp;
