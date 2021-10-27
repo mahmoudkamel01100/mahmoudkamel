@@ -169,14 +169,14 @@ workHttp.addEventListener("readystatechange" , function () {
 function displayworks(){
     var worktemp= ``;
 
-    for(var i=0;i<= workcontanier.records.length;i++){
+    for(var i=0;i<workcontanier.records.length;i++){
 		worktemp+= `<div class="col-md-6">
-		<img src="${workcontanier.records[i].fields.Image}" style="height: 25%;width: 100%;">
+		<img src="${workcontanier.records.fields[i].Image}" style="height: 25%;width: 100%;">
 		<div class="blog-text">
-			<h3><a href="${workcontanier.records[i].fields.LiveDemo}"
-					target="_blank">${workcontanier.records[i].fields.Name}</a></h3>
-			<p>${workcontanier.records[i].fields.Desc}</p>
-			<a href="${workcontanier.records[i].fields.LiveDemo}" target="_blank">Live Demo <i class="fas fa-arrow-right"></i></a>
+			<h3><a href="${workcontanier.records.fields[i].LiveDemo}"
+					target="_blank">${workcontanier.records.fields[i].Name}</a></h3>
+			<p>${workcontanier.records.fields[i].Desc}</p>
+			<a href="${workcontanier.records.fields[i].LiveDemo}" target="_blank">Live Demo <i class="fas fa-arrow-right"></i></a>
 		</div>
 	</div>`
 
