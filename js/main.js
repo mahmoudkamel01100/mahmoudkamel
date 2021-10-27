@@ -169,7 +169,7 @@ workHttp.addEventListener("readystatechange" , function () {
 function displayworks(){
     var worktemp= ``;
 
-    for(var i=1;i<workcontanier.records.length;i++){
+    for(var i=0;i<= workcontanier.records.length;i++){
 		worktemp+= `<div class="col-md-6">
 		<img src="${workcontanier.records[i].fields.Image}" style="height: 25%;width: 100%;">
 		<div class="blog-text">
